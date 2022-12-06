@@ -225,22 +225,22 @@ os.system('./kg/kindlegen -c1 -dont_append_source "%s" -o "%s"> a' % (epubname, 
 os.system('python ./KindleUnpack/lib/kindleunpack.py -s "%s" "%s"> a' % (azw3name, bookname))
 os.system('rm "%s"' % (azw3name))
 os.system('rm a')
-os.system('mv "%s" ~/Desktop/"%s"' % (bookname+'/mobi8-'+azw3name, azw3name))
+os.system('mv "%s" /content/"%s"' % (bookname+'/mobi8-'+azw3name, azw3name))
 os.system('rm -rf "%s"' % (bookname))
 end03 = time.perf_counter()
 print('azw3用时：%s秒' % (end03 - start03))
 
 ## 生成kepub文件
-start04 = time.perf_counter()
-os.system('kepubify -i "%s"' % (epubname))
-end04 = time.perf_counter()
-print('kepub用时： %s秒' % (end04 - start04))
+#start04 = time.perf_counter()
+#os.system('kepubify -i "%s"' % (epubname))
+#end04 = time.perf_counter()
+#print('kepub用时： %s秒' % (end04 - start04))
 
 
 print("删除残留文件......")
 os.system('rm "%s"' % (txtname))
 os.system('rm "%s"' % (jpgname))
 
-os.system('mv "%s" ~/Desktop' % (epubname))
-os.system('mv "%s" ~/Desktop' % (kepubname))
+os.system('mv "%s" /content/' % (epubname))
+os.system('mv "%s" /content/' % (kepubname))
 print("完成，收工，撒花！！🎉🎉")

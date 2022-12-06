@@ -8,12 +8,11 @@ body {
     line-height: 1em;
     text-align: justify;
  }
-code { font-family: monospace; }
+code {}
 h1 {
     margin: 1em 0 5em;
     line-height: 120%;
     text-align: left;
-    font-family: STSong, serif,"Times New Roman", "方正书宋", "宋体", "FZPingXianYaSongS-R-GB", "zw";
     padding: 15px 12px 1em 5px;
     border-style: none none dotted none;
     border-width: 0px 0px 1px 0px;
@@ -22,7 +21,6 @@ h2 {
     margin: 1em 0 5em;
     line-height: 120%;
     text-align: left;
-    font-family: STSong, serif,"Times New Roman", "方正书宋", "宋体", "FZPingXianYaSongS-R-GB", "zw";
     padding: 15px 12px 1em 5px;
     border-style: none none dotted none;
     border-width: 0px 0px 1px 0px;
@@ -37,7 +35,6 @@ h1.title {
     margin: 1em 0 5em;
     line-height: 120%;
     text-align: center;
-    font-family: "Times New Roman","方正书宋","宋体","FZPingXianYaSongS-R-GB","zw",sans-serif;
 }
 p.author { 
     text-align: center;

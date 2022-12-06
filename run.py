@@ -221,7 +221,7 @@ print('epub用时：%s秒' % (end02 - start02))
 
 ## 生成azw3格式
 start03 = time.perf_counter()
-os.system('kindlegen -c1 -dont_append_source "%s" -o "%s"> a' % (epubname, azw3name))
+os.system('./kg/kindlegen -c1 -dont_append_source "%s" -o "%s"> a' % (epubname, azw3name))
 os.system('python ./KindleUnpack/lib/kindleunpack.py -s "%s" "%s"> a' % (azw3name, bookname))
 os.system('rm "%s"' % (azw3name))
 os.system('rm a')

@@ -103,8 +103,8 @@ if __name__ == '__main__':
     path = './'
     transimg(path)
 
-os.system("find ./ -name '*.jpeg' -exec convert -resize 600x800 {} {} \;")
-os.system('rename *.jpeg "%s" *.jpeg' % jpgname)
+#os.system("find ./ -name '*.jpeg' -exec convert -resize 600x800 {} {} \;")
+os.system('mv *.jpeg "%s"' % jpgname)
 #图片转换结束
 
 print("开始文件转码.......")

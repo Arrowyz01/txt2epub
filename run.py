@@ -215,7 +215,7 @@ print('初始化用时：%s秒' % (end01 - start01))
 ## 生成epub文件
 start02 = time.perf_counter()
 print("开始生成EPUB文件........")
-os.system('pandoc "%s" -o "%s" -t epub3 --css=./epub.css --epub-chapter-level=2 --epub-cover-image="%s"' % (txtname, epubname, jpgname))
+os.system('pandoc "%s" -o "%s" -t epub3 --css=./epub.css --epub-chapter-level=2 --epub-metadata=meta.xml --epub-cover-image="%s"' % (txtname, epubname, jpgname))
 end02 = time.perf_counter()
 print('epub用时：%s秒' % (end02 - start02))
 

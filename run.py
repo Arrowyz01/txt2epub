@@ -193,7 +193,7 @@ for line in lines:
     if re.match(r'^\s*(楔子|序章|序言|序|引子).*',line):
             new_content.append("## " + line + "\n")
             continue
-    if re.match(r'^\s*[第][0123456789ⅠI一二三四五六七八九十零序〇百千两]*[卷].*',line):
+    if re.match(r'^\s*[第][0123456789ⅠI一二三四五六七八九十零序〇百千两]*[卷篇集部节].*',line):
         new_content.append("# " + line + "\n")
     if re.match(r'^\s*[卷][0123456789ⅠI一二三四五六七八九十零序〇百千两]*[ ].*',line):
         new_content.append("# " + line + "\n")

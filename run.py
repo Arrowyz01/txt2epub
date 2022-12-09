@@ -238,7 +238,7 @@ print('azw3用时：%s秒' % (end03 - start03))
 
 
 print("删除残留文件......")
-os.system('rm "%s"' % (txtname))
+#os.system('rm "%s"' % (txtname))
 os.system('rm "%s"' % (jpgname))
 
 os.system('mv "%s" /content/' % (epubname))
